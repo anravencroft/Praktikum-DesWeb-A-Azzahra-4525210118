@@ -3,4 +3,4 @@
 
 ### Hasil Screenshots
 __PC__
-<img width="883" height="404" alt="Screenshot 2026-09-22 183745" src="https://github.com/user-attachments/assets/9aa3a7ba-a092-4c73-9b1d-e55b4cf0f514" />
+<img width="1920" height="1032" alt="2026-09-22" src="https://github.com/user-attachments/assets/db6a6def-c1c6-4ff0-847f-fb1e986968d9" />
