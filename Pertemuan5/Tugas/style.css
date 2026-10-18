@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+    padding: 24px;
+    line-height: 1.4;
+}
+
+.page-title {
+    font-size: 1.5rem;
+}
+
+.page-sub {
+    margin: 4px 0 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.frames {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.frame.desktop {
+    flex: 1 1 780px;
+    min-width: 0;
+}
+
+.frame.mobile {
+    flex: 0 0 375px;
+}
+
+/* Wireframe */
+.wf {
+    border: 2px solid #333;
+    padding: 12px;
+    background: #f7f7f7;
+}
+
+.wf>* {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px dashed #888;
+    background: #fff;
+}
+
+.wf>*:last-child {
+    margin-bottom: 0;
+}
+
+.wf-row {
+    display: flex;
+    align-items: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.gap {
+    gap: 12px;
+}
+
+.grow {
+    flex: 1;
+}
+
+.box {
+    border: 1px solid #666;
+    background: #e4e4e4;
+    padding: 8px 12px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.w-logo {
+    width: 80px;
+}
+
+.cta {
+    background: #bbb;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.ph {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #666;
+    font-size: 13px;
+    margin-top: 8px;
+    background: linear-gradient(to top right, transparent calc(50% - 1px), #999 50%, transparent calc(50% + 1px)),
+        linear-gradient(to bottom right, transparent calc(50% - 1px), #999 50%, transparent calc(50% + 1px)), #eee;
+}
+
+.tall {
+    min-height: 140px;
+}
+
+.line {
+    height: 10px;
+    background: #ccc;
+    margin: 8px 0;
+}
+
+.line.h1 {
+    height: 18px;
+    width: 60%;
+    background: #aaa;
+}
+
+.line.short {
+    width: 40%;
+}
+
+.line.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards {
+    margin-top: 10px;
+}
+
+.card {
+    flex: 1;
+    min-height: 80px;
+    margin-top: 8px;
+}
+
+.field {
+    text-align: left;
+    margin-top: 8px;
+}
+
+.tall2 {
+    min-height: 70px;
+}
+
+.mobile .box.cta {
+    display: block;
+}
+
+/* Badge anotasi */
+.b {
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #c62828;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tabel anotasi */
+.legend-title {
+    margin-top: 28px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+th,
+td {
+    border: 1px solid #bbb;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #eee;
+}
+
+/* Media query: layar kecil */
+@media (max-width: 767px) {
+    .frames {
+        flex-direction: column;
+    }
+
+    .frame.mobile {
+        flex: none;
+        width: 100%;
+        max-width: 375px;
+    }
+
+    .wf-row.gap {
+        flex-wrap: wrap;
+    }
+}
