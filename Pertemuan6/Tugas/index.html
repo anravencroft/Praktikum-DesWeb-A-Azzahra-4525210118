@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Mahasiswa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="logo">A</div>
+                <div>
+                    <h2>Akademik</h2><span>Portal Mahasiswa</span>
+                </div>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Jadwal Kuliah</a>
+                <a href="#">KRS</a>
+                <a href="#">Hasil Studi</a>
+                <a href="#">Keuangan</a>
+                <a href="#">Pengaturan</a>
+                <a href="#design-system">Design System</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div>
+                    <h1>Selamat datang, Nerissa</h1>
+                    <p class="caption">Senin, 26 Oktober 2026 · Anda punya 3 kuliah hari ini</p>
+                </div>
+                <div class="profile">
+                    <img src="images/HBuwGmvbgAYqdU3.png" alt="Foto profil Nerissa Ravencroft" />
+                    <div><strong>Nerissa Ravencroft</strong><span>Mahasiswa</span></div>
+                </div>
+            </header>
+
+            <section class="stat-grid">
+                <div class="stat-card highlight">
+                    <span class="stat-label">IPK</span>
+                    <strong class="stat-value">3.78</strong>
+                    <span class="status success">Sangat Baik</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">SKS ditempuh</span>
+                    <strong class="stat-value">88</strong>
+                    <div class="progress" role="progressbar" aria-valuenow="88" aria-valuemax="144"><i
+                            style="width:61%"></i></div>
+                    <span class="stat-info">dari 144 SKS</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Mata kuliah</span>
+                    <strong class="stat-value">7</strong>
+                    <span class="stat-info">Semester berjalan</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Status</span>
+                    <strong class="stat-value">Aktif</strong>
+                    <span class="status success">Terdaftar</span>
+                </div>
+            </section>
+
+            <div class="content-grid">
+                <section class="panel">
+                    <div class="panel-header">
+                        <h2>Jadwal hari ini</h2>
+                        <button class="btn btn-outline">Lihat semua</button>
+                    </div>
+                    <div class="schedule">
+                        <div class="schedule-item now">
+                            <div class="schedule-time"><strong>08:00</strong><span>09:40</span></div>
+                            <div>
+                                <h3>Desain Web</h3>
+                                <p>Ruang Lab Komputer 1</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time"><strong>10:00</strong><span>11:40</span></div>
+                            <div>
+                                <h3>Basis Data</h3>
+                                <p>Ruang 204</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time"><strong>13:00</strong><span>14:40</span></div>
+                            <div>
+                                <h3>Pemrograman Web</h3>
+                                <p>Laboratorium Komputer 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="panel">
+                    <div class="panel-header">
+                        <h2>Pengumuman</h2>
+                    </div>
+                    <div class="notification">
+                        <span class="status warning">Penting</span>
+                        <h3>Pengisian KRS</h3>
+                        <p>Pengisian KRS semester berikutnya dibuka pada 24 Agustus 2026.</p>
+                        <button class="btn btn-primary">Isi KRS</button>
+                    </div>
+                    <div class="notification">
+                        <span class="status info">Informasi</span>
+                        <h3>Seminar Akademik</h3>
+                        <p>Seminar akademik akan dilaksanakan di auditorium universitas.</p>
+                    </div>
+                </aside>
+            </div>
+
+            <section class="panel table-panel">
+                <div class="panel-header">
+                    <h2>Mata kuliah semester ini</h2>
+                </div>
+                <div class="toolbar">
+                    <div class="field"><label for="cari">Cari mata kuliah</label><input class="input" id="cari"
+                            type="search" placeholder="Contoh: Basis Data" /></div>
+                    <div class="field"><label for="smt">Semester</label><select class="input" id="smt">
+                            <option>Semester 5</option>
+                            <option>Semester 4</option>
+                        </select></div>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mata Kuliah</th>
+                                <th>SKS</th>
+                                <th>Dosen</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Mata kuliah">Desain Web</td>
+                                <td data-label="SKS">3</td>
+                                <td data-label="Dosen">Saka Wijaya</td>
+                                <td data-label="Status"><span class="status success">Aktif</span></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Mata kuliah">Basis Data</td>
+                                <td data-label="SKS">3</td>
+                                <td data-label="Dosen">Maura Anastasya</td>
+                                <td data-label="Status"><span class="status success">Aktif</span></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Mata kuliah">Pemrograman Web</td>
+                                <td data-label="SKS">3</td>
+                                <td data-label="Dosen">Sadib Satya</td>
+                                <td data-label="Status"><span class="status success">Aktif</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="ds" id="design-system">
+                <h2>Simple Design System</h2>
+                <p class="caption">Token dan komponen yang dipakai di halaman ini (css/style.css).</p>
+
+                <div class="panel">
+                    <h3>Colors</h3>
+                    <div class="sw">
+                        <div style="background:#2F4BD0;color:#fff">Primary 600 #2F4BD0</div>
+                        <div style="background:#2239A8;color:#fff">Primary 700 #2239A8</div>
+                        <div style="background:#E8ECFC">Primary 100 #E8ECFC</div>
+                        <div style="background:#F59E0B">Accent 500 #F59E0B</div>
+                        <div style="background:#142041;color:#fff">Sidebar #142041</div>
+                        <div style="background:#172033;color:#fff">Ink #172033</div>
+                        <div style="background:#5B6578;color:#fff">Muted #5B6578</div>
+                        <div style="background:#F4F6FB">Background #F4F6FB</div>
+                        <div style="background:#1C7A3E;color:#fff">Success #1C7A3E</div>
+                        <div style="background:#8A5A00;color:#fff">Warning #8A5A00</div>
+                        <div style="background:#1F5E9E;color:#fff">Info #1F5E9E</div>
+                        <div style="background:#B42B2B;color:#fff">Danger #B42B2B</div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h3>Typography</h3>
+                    <p class="caption">Sora (heading) + Public Sans (body), skala 1.25.</p>
+                    <table class="type">
+                        <tr>
+                            <td>
+                                <h1>Heading 1</h1>
+                            </td>
+                            <td class="caption">31px · Bold</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>Heading 2</h2>
+                            </td>
+                            <td class="caption">25px · SemiBold</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 style="margin:0">Heading 3</h3>
+                            </td>
+                            <td class="caption">20px · SemiBold</td>
+                        </tr>
+                        <tr>
+                            <td>Body – teks isi</td>
+                            <td class="caption">16px · Regular · line-height 1.6</td>
+                        </tr>
+                        <tr>
+                            <td class="caption">Caption / label</td>
+                            <td class="caption">14px · Medium</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="panel">
+                    <h3>Spacing &amp; radius</h3>
+                    <div class="sp"><i style="width:4px"></i>4px s1</div>
+                    <div class="sp"><i style="width:8px"></i>8px s2</div>
+                    <div class="sp"><i style="width:16px"></i>16px s3</div>
+                    <div class="sp"><i style="width:24px"></i>24px s4</div>
+                    <div class="sp"><i style="width:32px"></i>32px s5</div>
+                    <div class="sp"><i style="width:48px"></i>48px s6</div>
+                    <p class="caption">Radius 8px untuk elemen dalam (tombol, input), 16px untuk kartu (outer = 2 ×
+                        inner).</p>
+                </div>
+
+                <div class="panel">
+                    <h3>Buttons</h3>
+                    <div class="row">
+                        <button class="btn btn-primary">Primary</button><button class="btn btn-outline">Outline</button>
+                        <button class="btn btn-ghost">Ghost</button><button class="btn btn-primary"
+                            disabled>Disabled</button>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h3>Form controls</h3>
+                    <div class="row" style="align-items:start">
+                        <div class="field"><label>Default</label><input class="input" placeholder="Placeholder" /></div>
+                        <div class="field"><label>Error</label><input class="input error" value="abc" /><span
+                                class="help">Format salah. Isi dengan angka.</span></div>
+                        <div class="field"><label>Select</label><select class="input">
+                                <option>Semester 5</option>
+                            </select></div>
+                        <label class="check"><input type="checkbox" checked /> Checkbox</label>
+                        <label class="check"><input type="radio" checked /> Radio</label>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h3>Cards</h3>
+                    <div class="stat-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:0">
+                        <div class="stat-card highlight"><span class="stat-label">Stat card (highlight)</span><strong
+                                class="stat-value">3.78</strong><span class="status success">Sangat Baik</span></div>
+                        <div class="stat-card" style="box-shadow:none;border:1px solid var(--line)"><span
+                                class="stat-label">Stat card</span><strong class="stat-value">88</strong><span
+                                class="stat-info">dari 144 SKS</span></div>
+                        <div class="stat-card" style="box-shadow:none;border:1px solid var(--line)"><span
+                                class="stat-label">Status badge</span><span class="status warning">Penting</span><span
+                                class="status info">Info</span><span class="status danger">Gagal</span></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
